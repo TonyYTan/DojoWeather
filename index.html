@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div id="headerContainer">
+            <div>
+                <h1>DojoWeather</h1>
+            </div>
+            <div>
+                <ul id="cityList">
+                    <li><a onclick="alertMess()" class="a" href="#">Burbank</a></li>
+                    <li><a onclick="alertMess()" class="a" href="#">Chicago</a></li>
+                    <li><a onclick="alertMess()" class="a" href="#">Dallas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="masterContainer">
+        <div id="currentCity">
+            <h2>San Jose</h2>
+            <div>
+                show temperature in <select onchange="unitChange()" name="degreeUnit" id="degreeUnit">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+        <div id="forecast">
+            <div class="daily">
+                <h3>Today</h3>
+                <img class="weatherSymbol" src="./assets/some_rain.png" alt="figure of rain">
+                <p>some rain</p>
+                <div class="tempRange">
+                    <div class="highest">
+                        <h4><span class="highestNum">24</span>°C</h4>
+                    </div>
+                    <div class="lowest">
+                        <h4><span class="lowestNum">18</span>°C</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="daily">
+                <h3>Tomorrow</h3>
+                <img class="weatherSymbol" src="./assets/some_sun.png" alt="figure of sun">
+                <p>some sun</p>
+                <div class="tempRange">
+                    <div class="highest">
+                        <h4><span class="highestNum">27</span>°C</h4>
+                    </div>
+                    <div class="lowest">
+                        <h4><span class="lowestNum">19</span>°C</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="daily">
+                <h3>Friday</h3>
+                <img class="weatherSymbol" src="./assets/some_clouds.png" alt="figure of clouds">
+                <p>some clouds</p>
+                <div class="tempRange">
+                    <div class="highest">
+                        <h4><span class="highestNum">21</span>°C</h4>
+                    </div>
+                    <div class="lowest">
+                        <h4><span class="lowestNum">16</span>°C</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="daily">
+                <h3>Saturday</h3>
+                <img class="weatherSymbol" src="./assets/some_sun.png" alt="figure of sun">
+                <p>some sun</p>
+                <div class="tempRange">
+                    <div class="highest">
+                        <h4><span class="highestNum">26</span>°C</h4>
+                    </div>
+                    <div class="lowest">
+                        <h4><span class="lowestNum">21</span>°C</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cookie">
+        <div><img src="./assets/cookie.png" alt="cookie figure"></div>
+        <div>
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edcible ones) to personalize content and ads, to provide social media
+                features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <div><button onclick="dispear(this)">I Accept</button></div>
+    </div>
+
+</body>
+<script src="script.js">defer</script>
+
+</html>
